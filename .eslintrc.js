@@ -27,6 +27,6 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
-    '@typescript-eslint/no-var-requires': 'off'
+    '@typescript-eslint/no-var-requires': 'off',
   },
 };

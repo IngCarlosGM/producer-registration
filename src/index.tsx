@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './styles/index.css';
 import App from './App';
+import { FiltersProvider } from './context/filters';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <FiltersProvider>
+        <App />
+      </FiltersProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );
